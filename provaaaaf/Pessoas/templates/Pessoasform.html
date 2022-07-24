@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  
+            <h1>Novo/editar pessoa </h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form }}
+        <button type="enviar">Salvar</button>
+     </form>
+
+                %if Pessoas %
+                <a href="% url 'excluir_Pessoas' Pessoa.id%)"> Deletar</a>
+
+                % endif %
+
+  </body>
+</html>

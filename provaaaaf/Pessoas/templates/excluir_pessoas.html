@@ -1,0 +1,18 @@
+!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+     <form method="PosT">
+        {% csrf token %}
+        <h2> Você deseja mesmo remorver a Pessoa {{ Pessoas.nome }} </h2>
+
+ <button type="submit"> Confirmar  </button>
+</form>
+   
+  </body>
+</html>
